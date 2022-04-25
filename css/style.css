@@ -249,9 +249,7 @@ a {
 }
 
 
-.news {
 
-}
 
 
 .news__subtitle {
@@ -260,17 +258,46 @@ a {
     font-weight: 400;
     font-size: 45px;
     line-height: 110%;
+    margin-top: 50px;
 }
 .news__link {
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
 }
+
+.news__link::before{
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    height: 0;
+    width: 131px;
+    border-bottom: 2px solid #475f4566;
+    margin-right: 20px;
+}
+
+.news__link::after{
+    box-sizing: border-box;
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    background-image: url(../img/icon/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
 .news__content {
     display: flex;
 }
 .news__item {
     display: flex;
+    margin-bottom: 41px;
 }
 .news__item--big{
     width: 43%;
@@ -323,6 +350,90 @@ a {
     margin-top: 48px;
 }
 
+.footer{
+    background-color: #414840;
+}
 
 
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__column{
+    margin-top: 48px;
+    color: #ffffff;
+}
+
+.footer__nav-item{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.footer__nav-link{
+    color: #ffffff;
+}
+
+.footer__logo-block{
+    width: 269px;
+    height: 164px;
+}
+
+.footer__info{
+    margin-top: 20px;
+}
+
+.logo__img{
+    width: 48px;
+    height: 48px;
+}
+
+
+.footer__subtitle{
+    margin-bottom: 20px;
+}
+
+.social__list{
+    display: flex;
+}
+
+.social__item{
+    margin-right: 32px;
+    width: 24px;
+    height: 24px;
+}
+
+.social__link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-size: 0;
+}
+
+.twitter{
+    background-image: url(../img/icon/twitter.svg);
+}
+
+.fb{
+    background-image: url(../img/icon/facebook.svg);
+}
+
+.in{
+    background-image: url(../img/icon/linkedin.svg);
+}
+
+.mail{
+    background-image: url(../img/icon/mail.svg);
+}
+
+.footer__bottom{
+    width: 1400px;
+    height: 80px;
+}
 
